@@ -53,7 +53,8 @@ public class Employee extends Person{
     }
 
     public String toString() {
-        return super.toString().replace("}","") +
+        return getClass().getSimpleName()+"{" +
+                super.toString() +
                 ", employeeId='" + employeeId + '\'' +
                 ", jobTitle='" + jobTitle + '\'' +
                 ", salary=" + salary +
