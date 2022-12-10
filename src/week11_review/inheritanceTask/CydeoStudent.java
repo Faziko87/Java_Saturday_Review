@@ -45,6 +45,12 @@ public class CydeoStudent extends Student{
     }
 
     public void setProgLanguage(String progLanguage) {
+        if(progLanguage.equalsIgnoreCase("java")||progLanguage.equalsIgnoreCase("javaScript")||progLanguage.equalsIgnoreCase("python")){
+            System.out.println("you are selected "+progLanguage);
+        }else{
+            System.err.println("Wrong selection ");
+            System.exit(1);
+        }
         this.progLanguage = progLanguage;
     }
 
