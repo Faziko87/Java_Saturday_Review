@@ -17,7 +17,7 @@ public class Employee extends Person{
     }
 
     public void setEmployeeId(String employeeId) {
-        if(employeeId.startsWith("0")){
+        if(employeeId.charAt(0)=='0'){
             System.err.println("Employee id can not start with the character 0");
             System.exit(1);
         }
